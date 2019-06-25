@@ -1,0 +1,47 @@
+.Input-Container{
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px #cdd0d1 solid;
+    min-height: 80px;
+    padding: 10px 0px 10px 0px;
+}
+
+.Input-Main{
+    margin:0px auto 0px auto;
+    width:710px;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.New-Message{
+    resize: none;
+    width: 600px;
+    min-height: 80px;
+    border: none;
+    color: #6b6d6f;
+    font-weight: 300;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 15px;
+}
+
+.Send-Button{
+    height: 35px;
+    width: 100px;
+    background-color:#4155ac;
+    border: 0;
+    color: white;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    float: right;
+}
+
+.Send-Button:disabled{
+    background-color: #6b6d6f;
+    opacity: 0.2;
+    cursor: not-allowed;
+}

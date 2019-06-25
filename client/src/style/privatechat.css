@@ -1,0 +1,88 @@
+.Friends-Online{
+
+}
+
+.Panel-Container{
+    display: inline-block;
+    height: 100%;
+    width: 500px;
+    float:right;
+}
+
+.Open-Side{
+    height: 50px;
+    width: 50px;
+    top:43%;
+    position: fixed;
+    right: 0;
+}
+
+.Side-Panel{
+    position:fixed;
+    display: inline-block;
+    height: 100%;
+    /*width: 500px;*/
+    min-width: 0;
+    /*transition starting from the right to the left*/
+    right: 0;
+    background-color: #ebedef;
+    overflow-x: hidden;
+    transition: 0.4s;
+    border: 1px #cdd0d1 solid;
+}
+
+.Close-Panel{
+    height: 50px;
+    width: 50px;
+}
+
+.Online-Container{
+    position: fixed;
+    text-align: center;
+    display:inline-block;
+}
+.Online-Title{
+    font-size:30px;
+    color:#4155ac;
+    display:inline-block;
+    text-decoration: underline;
+    min-width:200px;
+    margin: 40px 0px 10px 0px;
+}
+
+.Online-List{
+    width:300px;
+    margin: 0px auto 0px auto;
+    display:inline-block;
+}
+
+.User-Button{
+    height: 40px;
+    width: 400px;
+    background-color: #f2f6f7;
+}
+
+.Open-Private{
+    height: 100px;
+    width: 100px;
+    font-size:36px;
+    color: #818181;
+}
+
+.Private-Container{
+    position:fixed;
+    display: inline-block;
+    height: 100%;
+    /*width: 500px;*/
+    width: 0;
+    /*transition starting from the right to the left*/
+    right: 0;
+    background-color: #ebedef;
+    overflow-x: hidden;
+    transition: 0.4s;
+    border: 1px #cdd0d1 solid;
+}
+
+.Private-Chat-Container{
+
+}

@@ -1,0 +1,15 @@
+body{
+    margin:0;
+    background-color: #f2f6f7;;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 15px;
+    color: #353638;
+}
+
+p{
+    font-weight: 300;
+    min-width: 107px;
+}
+
+
+

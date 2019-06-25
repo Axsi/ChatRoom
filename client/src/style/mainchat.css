@@ -1,0 +1,92 @@
+.Chat-Container{
+    min-height: 50vh;
+    padding: 120px 0px 120px 0px;
+}
+
+.Chat-Inner{
+    min-height:50vh;
+    width: 900px;
+    margin: 0px auto 0px auto;
+}
+
+.Message-Others{
+    display:flex;
+    margin-bottom: 1rem;
+}
+
+.Display-Name{
+    text-align:right;
+    margin-top:9px;
+    min-width: 120px;
+}
+
+.Message-Content{
+    flex-grow:1;
+    line-height: 1.4;
+    position: relative;
+    background-color: white;
+    border: 1px #cdd0d1 solid;
+    padding: 0.5rem 0.6rem 0.6rem 12px;
+    border-radius: 3px;
+    margin-left: 20px;
+    margin-right: 25%;
+    /*min-height: 2.25rem;*/
+    word-break: break-word;
+    hyphens: auto;
+    white-space: pre-wrap;
+}
+
+.Message-Content::before{
+    position:absolute;
+    display:block;
+    content:"";
+    background-color: white;
+    border: 1px white solid;
+    border-top: 1px #cdd0d1 solid;
+    border-left: 1px #cdd0d1 solid;
+    width: 16px;
+    height: 16px;
+    left: -9px;
+    transform: rotate(-45deg);
+}
+
+.Message-Self{
+    display:flex;
+    margin-bottom: 1rem;
+}
+
+.Display-Name-Self{
+    margin-top:9px;
+    text-align: left;
+    min-width: 120px;
+}
+
+.Message-Content-Self{
+    margin-left: 25%;
+    margin-right: 20px;
+    flex-grow:1;
+    line-height: 1.4;
+    position: relative;
+    background-color: white;
+    border: 1px #cdd0d1 solid;
+    padding: 0.5rem 0.6rem 0.6rem 12px;
+    border-radius: 3px;
+    word-break: break-word;
+    hyphens: auto;
+    white-space: pre-wrap;
+}
+
+.Message-Content-Self::before{
+    right: -9px;
+    transform: rotate(-225deg);
+    position:absolute;
+    display:block;
+    content:"";
+    background-color: white;
+    border: 1px white solid;
+    border-top: 1px #cdd0d1 solid;
+    border-left: 1px #cdd0d1 solid;
+    width: 16px;
+    height: 16px;
+}
+

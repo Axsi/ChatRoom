@@ -1,0 +1,51 @@
+.Modal-Content{
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 400px;
+    height: 400px;
+}
+
+.Registration-Header{
+    border-bottom: 1px #cdd0d1 solid;
+    margin-bottom: 80px;
+}
+
+.Register-Form{
+    width: 400px;
+    height: 280px;
+}
+
+.Register-Form-Group{
+    padding: 5px 0px 10px 0px;
+    font-size: 17px;
+    color:black;
+}
+
+#User-Register{
+    width:390px;
+    height: 23px;
+    margin-bottom: 10px;
+    border:1px #cdd0d1 solid;
+}
+
+#Password-Register{
+    width:390px;
+    height: 23px;
+    margin-bottom: 20px;
+    border:1px #cdd0d1 solid;
+}
+
+
+.Register-Button{
+    border:1px #cdd0d1 solid;
+    height: 30px;
+    border-radius: 3px;
+}
+
+.Registration-Status{
+    margin: 30px auto 0px auto;
+    width: 400px;
+    text-align: center;
+}
