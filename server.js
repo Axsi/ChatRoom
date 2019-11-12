@@ -41,10 +41,12 @@ io.use(sharedsession(session));
 io.on('connection', function(socket){
     console.log('a user connected');
     console.log(Object.keys(io.sockets.sockets));
-
+    //socket.handshake.session is acessible through express-socket.io-session module, it lets us access the socket.handshake session
+    //which is the req.session session object
     if(connected_users[socket.handshake.session.passport.user]){
         connected_users[socket.handshake.session.passport.user].disconnect();
     }
+    // here we push the connected user and its socket into connected_user global array
     connected_users[socket.handshake.session.passport.user] = socket;
 
     io.emit('total', Object.keys(io.sockets.sockets).length);
@@ -165,6 +167,7 @@ app.post('/registration', (req, res)=>{
                 res.send({registrationStatus: "Username already exists"});
             }else{
               collection.insertOne({
+                  //inserting data/accountInfo into database
                   username: req.body.newUser,
                   password: hashAndSalt.passwordHash,
                   salt: hashAndSalt.saltKey,

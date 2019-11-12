@@ -8,6 +8,8 @@ class Messages extends React.Component{
     render(){
         return(
             this.props.messages.map((message)=>
+                //determine the username displayed in a message, if its not you then display a username if it is yourself
+                //then display "You"
                     this.props.name !== message.username ? (
                         <div className="Message-Others" key={message.id}>
                             <p className="Display-Name">

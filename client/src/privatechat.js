@@ -64,7 +64,8 @@ class PrivateChat extends React.Component{
                 <div className="Online-List>">
                     {this.state.ConnectedUsers.map((keyName)=> (
                         <button className="User-Button" name="PrivateChatWidth"
-                                id={keyName} key={keyName} onClick={this.openSide}>{keyName}
+                                id={keyName} key={keyName} onClick={this.openSide}>
+                            {keyName}
                         </button>
                     ))}
                 </div>

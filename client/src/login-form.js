@@ -48,7 +48,6 @@ class LoginForm extends React.Component{
             .then(data=>{
                 this.props.history.push(data.url);
             })
-
     }
 
     //ideally we don't want functions inside render as they would be called every time render is called which is

@@ -13,6 +13,7 @@ class MainChat extends React.Component{
     }
 
     handleMessage(message){
+        //keep a collection of messages to be displayed in chat window
         this.setState(prevState=>({
             messages: [...prevState.messages, message]
         }));

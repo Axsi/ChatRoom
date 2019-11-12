@@ -15,11 +15,12 @@ class MainInput extends React.Component{
     componentDidMount() {
         this.props.socket.on('message', messageObj=>{
             this.props.submitMessage(messageObj);
-
+            //focus was used so user can immediately type in chat box without clicking on it
             this.messageArea.focus();
         })
     }
 
+    //when a user sends a message, socket emits the message ,which is saved in the state, to everyone
     handleSubmit(event){
         event.preventDefault();
         this.props.socket.emit('newMessage',this.state.message);
